@@ -19,11 +19,5 @@ public class HelloWorldController {
     public Greeting greeting(@RequestParam(value = "name",defaultValue = "World") String name){
         return new Greeting(counter.incrementAndGet(),String.format(template,name));
     }
-//    public List<String> getHelloWorld(){
-//        List<String > lst= new ArrayList<String>();
-//        lst.add("Hello");
-//        lst.add("Saahil");
-//        //return List.of("Hello","World");
-//        return lst;
-//    }
+
 }
